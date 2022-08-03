@@ -159,4 +159,28 @@ body {
 
     padding: 20px;
     margin: 20px;
+    margin-bottom: 0px;
+}
+
+
+.new-books dd a:any-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.new-books dd a h4 {
+    font-size: 20px;
+    background-color: #438daa;
+    color: whitesmoke;
+    width: 100px;
+    text-align: center;
+    margin: 10px;
+    display: inline-grid;
+    border-radius: 10px 0;
+}
+
+.new-books dd a h4:hover {
+    background-color: #53b0d5;
+    box-shadow: 0px 2px 0px 1px white;
+    transition: 0.7s;
 }
