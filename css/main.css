@@ -23,11 +23,11 @@ body {
 
 .header:hover {
     box-shadow: 0px -75px 95px 72px #438dab;
-    transition: 0s;
-    -webkit-transition: 0s;
-    -moz-transition: 0s;
-    -ms-transition: 0s;
-    -o-transition: 0s;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
 }
 
 .header .logo {
@@ -137,8 +137,17 @@ body {
 }
 
 .new-books img {
+    width: 300px;
+    border-radius: 0 25px 0 25px;
+    -webkit-border-radius: 0 25px 0 25px;
+    -moz-border-radius: 0 25px 0 25px;
+    -ms-border-radius: 0 25px 0 25px;
+    -o-border-radius: 0 25px 0 25px;
+}
 
-    width: 250px;
+.new-books img:hover {
+    box-shadow: 3px 3px 0px 1px white;
+    transition: 1s;
 }
 
 .new-books .book-1 {
@@ -183,4 +192,43 @@ body {
     background-color: #53b0d5;
     box-shadow: 0px 2px 0px 1px white;
     transition: 0.7s;
+}
+
+.new-books dd blockquote {
+    width: 300px;
+    overflow: hidden;
+    display: inline-grid;
+    display: -ms-inline-grid;
+    display: -moz-inline-grid;
+    height: 100px;
+}
+
+.new-books dd blockquote:hover {
+    height: 215px;
+    transition: 1.5s;
+    -webkit-transition: 1.5s;
+    -moz-transition: 1.5s;
+    -ms-transition: 1.5s;
+    -o-transition: 1.5s;
+}
+
+.new-books dd .price-old,
+.price-new {
+    font-size: 18px;
+    text-align: center;
+    margin: 5px;
+}
+
+.new-books dd .price-new {
+    font-size: 27px;
+    color: whitesmoke;
+    margin-top: -16px;
+    margin-bottom: -13px;
+}
+
+.new-books dd .price-old {
+    text-decoration-color: darkred;
+    text-decoration-style: 3px solid;
+    -moz-text-decoration-color: darkred;
+    -moz-text-decoration-style: 3px solid;
 }
