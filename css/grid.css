@@ -1,0 +1,91 @@
+/* Grid - parent
+
+-- display : grid | inline-grid
+-grid-template-columns => [number of columns in] => [px, percentage, fr, Mix  ]
+-grid-template-rows => [number of rows height in] =>[px, percentage, fr, Mix  ]
+-grid-template-columns => [number of clumns in] =>
+repeat(number of #, size)
+row-gap , column-gap = gap 
+grid-template-areas => "" "" ""
+grid-area : ++++++
+
+Grid - Child
+
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+.parent {
+    margin: 20px auto;
+    width: 800px;
+    height: 500px;
+    background-color: #eee;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px 10px;
+}
+
+.parent div {
+    background-color: red;
+    color: white;
+    padding: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+
+/* * {
+    color: white;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.page {
+    height: 100vh;
+    background-color: #eee;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: 50px auto 50px 0;
+    grid-template-areas:
+        "logo logo nav nav nav nav nav nav nav nav"
+        "cont cont cont cont cont cont cont side side side"
+        "foot foot foot foot foot foot foot foot foot foot";
+
+
+
+}
+
+h2 {
+    grid-area: logo;
+    background-color: blueviolet;
+}
+
+nav {
+    grid-area: nav;
+    background-color: aquamarine;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block
+}
+
+section {
+    grid-area: cont;
+    background-color: seagreen;
+}
+
+aside {
+    grid-area: side;
+    background-color: greenyellow;
+}
+
+footer {
+    grid-area: foot;
+    background-color: maroon;
+} */
